@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
 import ExpenseItem from "./components/ExpenseItem";
+import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
   const expenses = [
     {
@@ -28,6 +29,7 @@ function App() {
       <header>
         <h1>ISDP React</h1>
       </header>
+      <NewExpense />
       <ExpenseItem title="Pen" amount="123" date={expenses[0].date} />
       <ExpenseItem
         title={expenses[0].title}
